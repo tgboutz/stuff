@@ -1,0 +1,40 @@
+<xml xmlns="https://developers.google.com/blockly/xml"><variables><variable type="KIND_SpriteKind" id="klxdF%%YJ~]|H|[D0Y/g">Player</variable><variable type="KIND_SpriteKind" id="|4zi(I`NXNSuP18J*VAc">Projectile</variable><variable type="KIND_SpriteKind" id="9[tng8B3TRJB2F9QzkTE">Food</variable><variable type="KIND_SpriteKind" id="m5V`*:Er_oq=v!1:h!9H">Enemy</variable><variable id="h1qD10}O(L_5Piuf~6`-">my_sprite</variable><variable id="=`fhBGVTc4jkWS*zC%$-">damaged_you</variable><variable id="L?m.AVq.,.Ruo5hx,e-,">mySprite</variable><variable id="+acWBls(O`V0^Inv:v5J">cutscene</variable><variable id="J99M=MMv5nur2@Tv,fYC">mySprite2</variable></variables><block type="pxt-on-start" id="2dzJ6gh,dunIf{g1#lj)" x="0" y="0"><statement name="HANDLER"><block type="variables_set" id="~6`%FWORj(AE]zr=(Oxc"><field name="VAR" id="L?m.AVq.,.Ruo5hx,e-,">mySprite</field><value name="VALUE"><shadow xmlns="http://www.w3.org/1999/xhtml" type="math_number"><field name="NUM">0</field></shadow><block type="spritescreate" id="CE89ZReV)KU0XeOO`cZq"><value name="img"><shadow type="screen_image_picker" id="bAzXU;Zq3cX+aN[drqUB"><field name="img">img`
+. . . f . 2 f . . . 
+. . f 1 f f 4 f . . 
+. . . f . . 2 . . . 
+. f . . . . . 2 f . 
+f 1 f . . . . f 1 f 
+. f 1 f f f f 1 f . 
+. . f 1 1 1 1 f . . 
+. . . f f f f . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"bAzXU;Zq3cX+aN[drqUB"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="E.p@F6y6cXMKfcHL4Fb("><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="mp_setPlayerSprite" id="7,L@tNXE[rPQDW+vCrc#"><value name="player"><shadow type="mp_playerSelector"><field name="number">mp.PlayerNumber.One</field></shadow><block type="mp_getPlayerBySprite" id="6$yFqfE=.M6_*F:#GfZC"><value name="sprite"><block type="variables_get" id="U|N[^*tZaGiE2)!AX[TL"><field name="VAR" id="L?m.AVq.,.Ruo5hx,e-,">mySprite</field></block></value></block></value><value name="sprite"><shadow type="spritescreate"><value name="img"><shadow type="screen_image_picker"><field name="img">img`
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+. . . . . . . . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"9^ha8cDD0e$U;`8eW[@A"}}</data></shadow></value><value name="kind"><shadow type="spritekind"><field name="MEMBER">Player</field></shadow></value></shadow><block type="spritescreate" id="BxWEw[UQ]CuakN05sY{Q"><value name="img"><shadow type="screen_image_picker" id="Qe3L(L%T~Yxlpfs;p3CM"><field name="img">img`
+. . . f . 2 f . . . 
+. . f 1 f f 4 f . . 
+. . . f . . 2 . . . 
+. f . . . . . 2 f . 
+f 1 f . . . . f 1 f 
+. f 1 f f f f 1 f . 
+. . f 1 1 1 1 f . . 
+. . . f f f f . . . 
+. . . . . . . . . . 
+. . . . . . . . . . 
+`</field><data>{"commentRefs":[],"fieldData":{"img":"Qe3L(L%T~Yxlpfs;p3CM"}}</data></shadow></value><value name="kind"><shadow type="spritekind" id="DW/m|O{SA#;in~F_NImV"><field name="MEMBER">Player</field></shadow></value></block></value><next><block type="mp_moveWithButtons" id="klqg^{EAyWJ[_4L2Eh!7"><mutation xmlns="http://www.w3.org/1999/xhtml" _expanded="0" _input_init="true"></mutation><value name="player"><shadow type="mp_playerSelector" id=";C}y0Nc-xzlKxO;E1*9."><field name="number">mp.PlayerNumber.One</field></shadow></value><value name="vx"><shadow type="spriteSpeedPicker" id=":W|b-FzT%vZ^TPu#cSA:"><field name="speed">100</field></shadow></value><value name="vy"><shadow type="spriteSpeedPicker" id="2^{!b{}a??H*GXiT|S$-"><field name="speed">100</field></shadow></value><next><block type="set_current_tilemap" id="_O??bnY:?+s5|;-/BA_["><value name="tilemap"><shadow type="tiles_tilemap_editor"><field name="tilemap">tilemap`level6`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level6"}}</data></shadow><block type="tiles_tilemap_editor" id=")o7f28X6Cbc^RgH)fB-7"><field name="tilemap">tilemap`level6`</field><data>{"commentRefs":[],"fieldData":{"tilemap":"level6"}}</data></block></value></block></next></block></next></block></next></block></statement></block></xml>
